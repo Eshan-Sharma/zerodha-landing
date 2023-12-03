@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Zerodha Landing page</title>
 </head>
 <body style="font-family: Inter, serif; color: #424242 ; " >
@@ -43,6 +44,36 @@
             
     </div>
 
+    <div class="assignment">
+        <div>
+            <div class="row">
+                <input type="text" name="Capital" id="capital"></input>
+                <div>Capital</div>
+            </div>
+            <div class="row">
+                <input type="text" name="Years" id="years"></input>
+                <div>Years</div>
+            </div>
+            <div class="row">
+                <input type="text" name="Interest" id="interest"></input>
+                <div>Interest</div>
+            </div>
+        </div>
+        
+        
+        <div>
+            <div>
+                <input type="radio" name="compound" id="compound" value="Compound">
+                <label for="compound" style="color: white;">Compound</label>
+            </div>
+            <div class="row">
+                <input type="text" name="result" id="result" readonly></input>
+                <button onclick="calc()">Calculate</button>
+            </div>
+            
+        </div>
+        
+    </div>
     <!-- <div style="width: 900; border: #424242;">
         <div>
             <input style="border-radius: 3px; background-color: #387ED1 ;color: #fff; padding: 10px 30px; text-align: center; line-height: 1.2em; font-weight: 500; text-decoration: none; white-space: nowrap; cursor: pointer;">Capital</Input>
@@ -57,5 +88,6 @@
             <button style="border-radius: 3px; background-color: #387ED1 ;color: #fff; padding: 10px 30px; text-align: center; line-height: 1.2em; font-weight: 500; text-decoration: none; white-space: nowrap; cursor: pointer;">Calculate</button>
         </div>
     </div> -->
+    <script src="script.js"></script>
 </body>
 </html>
